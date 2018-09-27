@@ -8,8 +8,9 @@ const router = new express.Router();
 const quotes = [];
 
 router.get('/', function(req, res) {
-    res.json({message: 'Node quote initialized with '
-    + quotes.length + ' quotes.'});
+    res.json({
+        message: 'Node quote initialized with ' + quotes.length + ' quotes.',
+    });
 });
 
 router.get('/quote', function(req, res) {
