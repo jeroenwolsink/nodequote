@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: "aksjwse"
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "aksjwse"
+    spec:
+      containers:
+        - name: "aksjwse"
+          image: "acrjwse.azurecr.io/aksjwse"
+          ports:
+          - containerPort: 8080
