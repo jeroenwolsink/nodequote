@@ -24,10 +24,10 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
-    "nodemon": "^1.17.3"
+    "nodemon": "^2.0.4"
   },
   "dependencies": {
-    "express": "^4.16.3",
-    "fast-csv": "^2.4.1"
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.1"
   }
 }
