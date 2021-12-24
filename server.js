@@ -7,18 +7,18 @@ const port = process.env.PORT || 8080;
 const router = new express.Router();
 const quotes = [];
 
-router.get("/", function (req, res) {
+router.get("/status", function (req, res) {
   res.json({
     message: "Node quote initialized with " + quotes.length + " quotes.",
   });
 });
 
-router.get("/quote", function (req, res) {
+router.get("/", function (req, res) {
   let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   res.json(randomQuote);
 });
 
-app.use("/api", router);
+app.use("/", router);
 
 app.listen(port);
 
