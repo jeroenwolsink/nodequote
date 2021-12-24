@@ -9,7 +9,7 @@ const quotes = [];
 
 router.get("/status", function (req, res) {
   res.json({
-    message: "Node quote initialized with " + quotes.length + " quotes.",
+    message: "Node quote v2 initialized with " + quotes.length + " quotes.",
   });
 });
 
