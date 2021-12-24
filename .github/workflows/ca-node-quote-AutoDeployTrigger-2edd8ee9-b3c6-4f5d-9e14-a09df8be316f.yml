@@ -35,7 +35,7 @@ jobs:
         with:
           push: true
           tags: crcappspoc.azurecr.io/ca-node-quote:${{ github.sha }}
-          file: /Dockerfile
+          file: ./Dockerfile
 
 
   deploy:
