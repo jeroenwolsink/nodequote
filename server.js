@@ -15,6 +15,7 @@ router.get("/status", function (req, res) {
 
 router.get("/", function (req, res) {
   let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  randomQuote.version = 'V2'
   res.json(randomQuote);
 });
 
