@@ -8,6 +8,12 @@ const port = process.env.PORT || 8080;
 const router = express.Router();
 const quotes = [];
 
+app.use("/ui", express.static(path.join(__dirname, "public")));
+
+app.get("/ui", (_req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
 // Health / status endpoint
 router.get("/status", (req, res) => {
   res.json({
